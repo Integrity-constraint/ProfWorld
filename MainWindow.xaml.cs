@@ -16,7 +16,8 @@ using HandyControl.Tools;
 namespace ProfWorld
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainWindow.xaml12345
+    /// //new
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -297,7 +298,10 @@ namespace ProfWorld
         {
             pr3.IsEnabled = false;
         }
-
+        public void finish4()
+        {
+            pr3.IsEnabled = false;
+        }
         private void ExitBTN(object sender, RoutedEventArgs e)
         {
             //тут был димаста 
