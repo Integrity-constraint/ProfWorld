@@ -16,7 +16,6 @@
         <!-- Верхняя часть -->
         <Image Source="/img/ProfWorld.png" DockPanel.Dock="Top" Margin="0,0,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="359" Height="70"/>
 
-
         <!-- Левое меню -->
         <StackPanel DockPanel.Dock="Left" Orientation="Vertical" Margin="0,0,10,0" Background="White" Width="360" HorizontalAlignment="Stretch">
             <Label Content="Имя:" Margin="15,5,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
