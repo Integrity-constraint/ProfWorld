@@ -23,6 +23,8 @@ namespace ProfWorld
     {
         public MainWindow()
         {
+  
+
             InitializeComponent();
             ConfigHelper.Instance.SetLang("ru");
             PreviewKeyDown += MainWindow_PreviewKeyDown;
