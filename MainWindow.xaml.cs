@@ -304,7 +304,7 @@ namespace ProfWorld
         }
         private void ExitBTN(object sender, RoutedEventArgs e)
         {
-            //тут был димаста 
+            
             Application.Current.Shutdown();
         }
     }
