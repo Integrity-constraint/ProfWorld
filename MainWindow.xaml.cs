@@ -300,6 +300,7 @@ namespace ProfWorld
 
         private void ExitBTN(object sender, RoutedEventArgs e)
         {
+           //тут был арсюмба
             Application.Current.MainWindow.Close();
         }
     }
