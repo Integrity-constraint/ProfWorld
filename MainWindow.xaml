@@ -1,0 +1,74 @@
+﻿<Window Background="#ADB9CE" x:Class="ProfWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProfWorld"
+        mc:Ignorable="d"
+        Title="Меню" Height="650" Width="1200">
+
+    <Window.Resources>
+  
+    </Window.Resources>
+
+    <DockPanel Margin="20">
+
+        <!-- Верхняя часть -->
+        <Image Source="/img/ProfWorld.png" DockPanel.Dock="Top" Margin="0,0,0,10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="359" Height="70"/>
+
+
+        <!-- Левое меню -->
+        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" Margin="0,0,10,0" Background="White" Width="360" HorizontalAlignment="Stretch">
+            <Label Content="Имя:" Margin="15,5,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
+            <Label Content="Очки:" Margin="15,5,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
+            <Button Name="pr1" Click="Prof1" Content="Проффесия 1" Margin="15,10,15,0" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold"/>
+            <Button Name="pr2" Click="Prof2" Content="Проффесия 2" Margin="15,5,15,0" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold"/>
+            <Button Name="pr3" Click="Prof3" Content="Проффесия 3" Margin="15,5,15,40" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold"/>
+            <Button Content="Выйти" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" FontSize="16" Height="34"/>
+            <Button x:Name="DeveloperButton" Content="Режим разработчика" Margin="15,5,15,0" Background="#ee6c4d" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Click="DeveloperButton_Click" FontSize="16" Height="34"/>
+        </StackPanel>
+         <ScrollViewer>
+             <StackPanel x:Name="DeveloperMenu" Margin="10,0,15,0" Visibility="Collapsed" Background="White" Width="150">
+          
+            <Label Content="Квест1" Margin="15,5,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
+                <Button Click="Prof1_1" Content="Задание 1" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof1_2" Content="Задание 2" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof1_3" Content="Задание 3" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof1_4" Content="Задание 4" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof1_5" Content="Задание 5" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+
+            <Label Content="Квест2" Margin="15,15,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
+                <Button Click="Prof2_1" Content="Задание 1" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof2_2" Content="Задание 2" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof2_3" Content="Задание 3" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof2_4" Content="Задание 4" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof2_5" Content="Задание 5" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+
+            <Label Content="Квест3" Margin="15,15,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
+                <Button Click="Prof3_1" Content="Задание 1" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof3_2" Content="Задание 2" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof3_3" Content="Задание 3" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof3_4" Content="Задание 4" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+                <Button Click="Prof3_5" Content="Задание 5" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch"/>
+            </StackPanel>
+        </ScrollViewer>
+        <!-- Контент -->
+        <Grid Margin="0,-60,0,0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Label Name="QuestName" Grid.Row="0" Content="Название квеста" Margin="0,5,5,5" HorizontalAlignment="Center" FontFamily="Futura Lt BT" Foreground="#293241" FontSize="26" Height="50" FontWeight="Bold" Width="239"/>
+                <Button x:Name="qst1" Content="1" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
+                <Button x:Name="qst2" Content="2" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
+                <Button x:Name="qst3" Content="3" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
+                <Button x:Name="qst4" Content="4" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
+                <Button x:Name="qst5" Content="5" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
+            </StackPanel>
+            <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Source="Pages/main.xaml" Grid.Row="1" Background="White"/>
+        </Grid>
+    </DockPanel>
+
+</Window>
