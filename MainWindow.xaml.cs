@@ -297,5 +297,10 @@ namespace ProfWorld
         {
             pr3.IsEnabled = false;
         }
+
+        private void ExitBTN(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Close();
+        }
     }
 }
