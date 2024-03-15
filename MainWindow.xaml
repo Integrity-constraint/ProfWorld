@@ -21,8 +21,8 @@
             <Label Content="Имя:" Margin="15,5,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
             <Label Content="Очки:" Margin="15,5,5,0" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Left"/>
             <Button Name="pr1" Click="Prof1" Content="Проффесия 1" Margin="15,10,15,0" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold"/>
-            <Button Name="pr2" Click="Prof2" Content="Проффесия 2" Margin="15,5,15,0" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold"/>
-            <Button Name="pr3" Click="Prof3" Content="Проффесия 3" Margin="15,5,15,40" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold"/>
+            <Button Name="pr2" Click="Prof2" Content="Проффесия 2" Margin="15,5,15,0" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold" IsEnabled="False"/>
+            <Button Name="pr3" Click="Prof3" Content="Проффесия 3" Margin="15,5,15,40" Background="#d7e3fc" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Height="50" FontSize="18" FontWeight="Bold" IsEnabled="False"/>
             <Button Click="ExitBTN" Content="Выйти" Margin="15,5,15,0" Background="#abc4ff" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" FontSize="16" Height="34"/>
             <Button x:Name="DeveloperButton" Content="Режим разработчика" Margin="15,5,15,0" Background="#ee6c4d" FontFamily="Futura Lt BT" Foreground="#293241" HorizontalAlignment="Stretch" Click="DeveloperButton_Click" FontSize="16" Height="34"/>
         </StackPanel>
