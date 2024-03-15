@@ -287,23 +287,22 @@ namespace ProfWorld
             qst4.IsEnabled = false;
             qst5.IsEnabled = false;
         }
-
+        //Работа кнопок
         public void finish1()
         {
             pr1.IsEnabled = false;
+            pr2.IsEnabled = true;
         }
         public void finish2()
         {
             pr2.IsEnabled = false;
+            pr3.IsEnabled = true;
         }
         public void finish3()
         {
             pr3.IsEnabled = false;
         }
-        public void finish4()
-        {
-            pr3.IsEnabled = false;
-        }
+
         private void ExitBTN(object sender, RoutedEventArgs e)
         {
             
