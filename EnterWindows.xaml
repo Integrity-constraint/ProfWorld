@@ -1,0 +1,46 @@
+﻿<Window x:Class="ProfWorld.EnterWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProfWorld"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="396.649" Width="355.799" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#abc4ff" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Click="авторизация" Content="ВХОД"  Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="6" Margin="5" Width="240" FontSize="14">
+            
+        </Button>
+        <TextBox Name="tblog" ToolTip="Логин" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="6" FontSize="18"> 
+            
+        </TextBox>
+        <TextBox Name="tbpass" ToolTip="Пароль" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="6" FontSize="18">
+
+        </TextBox>
+ 
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="6" FontSize="36"> 
+            Авторизация
+        </TextBlock>
+    </Grid>
+</Window>
