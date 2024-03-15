@@ -287,7 +287,7 @@ namespace ProfWorld
             qst4.IsEnabled = false;
             qst5.IsEnabled = false;
         }
-
+        //Работа кнопок
         public void finish1()
         {
             pr1.IsEnabled = false;
