@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProfWorld.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProfWorld"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="363" Width="476" ResizeMode="NoResize">
+    <Grid Background="#abc4ff">
+        <StackPanel Background="#abc4ff" Orientation="Vertical">
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Center" Margin="10,10,10,10" FontWeight="Bold" FontSize="20">Регистрация</TextBlock>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold" Text="Телефон"/>
+            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Логин</TextBlock>
+            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Пароль</TextBlock>
+            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Повторите пароль</TextBlock>
+            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,10"></TextBox>
+            <!-- Изменение ориентации StackPanel на горизонтальную -->
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="10,10,10,0">Зарегистрироваться</Button>
+                <Button Margin="10,10,10,0">Отмена</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

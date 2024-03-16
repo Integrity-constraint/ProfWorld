@@ -38,9 +38,11 @@ namespace ProfWorld
             }
         }
 
+
         private void Регистрация(object sender, RoutedEventArgs e)
         {
 
         }
+
     }
 }
