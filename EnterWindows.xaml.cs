@@ -37,5 +37,10 @@ namespace ProfWorld
                 MessageBox.Show("Ошибка!");
             }
         }
+
+        private void Регистрация(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
