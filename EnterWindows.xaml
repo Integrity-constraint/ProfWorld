@@ -13,7 +13,7 @@
             <TextBox FontFamily="Futura Lt BT" x:Name="tblog" Margin="10,0,10,15"></TextBox>
             <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Пароль</TextBlock>
             <TextBox FontFamily="Futura Lt BT" x:Name="tbpass" Margin="10,0,10,0"></TextBox>
-            <Button FontFamily="Futura Lt BT" Margin="10,80,10,10" Content="Войти" HorizontalAlignment="Center" Width="75" FontWeight="Bold"/>
+            <Button Click="log" FontFamily="Futura Lt BT" Margin="10,80,10,10" Content="Войти" HorizontalAlignment="Center" Width="75" FontWeight="Bold"/>
         </StackPanel>
 
     </Grid>
