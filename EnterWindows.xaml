@@ -7,43 +7,16 @@
         mc:Ignorable="d"
         Title="Авторизация" Height="396.649" Width="355.799" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#abc4ff" >
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+        <StackPanel Background="#abc4ff">
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Center" Margin="10,10,10,10" FontWeight="Bold" FontSize="20">Авторизация</TextBlock>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Логин</TextBlock>
+            <TextBox FontFamily="Futura Lt BT" x:Name="tblog" Margin="10,0,10,15"></TextBox>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Пароль</TextBlock>
+            <TextBox FontFamily="Futura Lt BT" x:Name="tbpass" Margin="10,0,10,0"></TextBox>
+            <Button Click="авторизация" FontFamily="Futura Lt BT" Margin="10,80,10,10" Content="Войти" HorizontalAlignment="Center" Width="136" FontWeight="Bold"/>
+            <Button Click="Регистрация" FontFamily="Futura Lt BT" Margin="10,0,10,10" Content="Регистрация" HorizontalAlignment="Center" Width="136" FontWeight="Bold"/>
 
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Button Click="авторизация" Content="ВХОД"  Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="6" Margin="5" Width="240" FontSize="14">
-            
-        </Button>
-        <Button Background="Transparent" Click="Регистрация" Content="Регистрация"  Grid.Column="1" Grid.Row="8" VerticalAlignment="Top" Grid.ColumnSpan="6"  Width="240" FontSize="14">
+        </StackPanel>
 
-        </Button>
-        <TextBox Name="tblog" ToolTip="Логин" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="6" FontSize="18"> 
-            
-        </TextBox>
-        <TextBox Name="tbpass" ToolTip="Пароль" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="6" FontSize="18">
-
-        </TextBox>
- 
-        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="6" FontSize="36"> 
-            Авторизация
-        </TextBlock>
     </Grid>
 </Window>

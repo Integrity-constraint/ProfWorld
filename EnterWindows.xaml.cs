@@ -40,7 +40,9 @@ namespace ProfWorld
 
         private void Регистрация(object sender, RoutedEventArgs e)
         {
-
+            Window reg = new RegisterWindow();
+            this.Close();
+            reg.Show();
         }
     }
 }
