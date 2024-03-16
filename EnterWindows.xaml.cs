@@ -24,7 +24,7 @@ namespace ProfWorld
             InitializeComponent();
         }
 
-        private void log(object sender, RoutedEventArgs e)
+        private void авторизация(object sender, RoutedEventArgs e)
         {
             if(tblog.Text == "Логин" & tbpass.Text == "Пароль")
             {
@@ -38,6 +38,11 @@ namespace ProfWorld
             }
         }
 
+
+        private void Регистрация(object sender, RoutedEventArgs e)
+        {
+
+        }
 
     }
 }
