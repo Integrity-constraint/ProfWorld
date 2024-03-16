@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProfWorld"
         mc:Ignorable="d"
-        Title="Авторизация" Height="326.649" Width="272.799" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Авторизация" Height="396.649" Width="355.799" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#abc4ff" >
-        <StackPanel Background="#abc4ff">
-            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Center" Margin="10,10,10,10" FontWeight="Bold" FontSize="20">Авторизация</TextBlock>
-            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Логин</TextBlock>
-            <TextBox FontFamily="Futura Lt BT" x:Name="tblog" Margin="10,0,10,15"></TextBox>
-            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Пароль</TextBlock>
-            <TextBox FontFamily="Futura Lt BT" x:Name="tbpass" Margin="10,0,10,0"></TextBox>
-            <Button Click="log" FontFamily="Futura Lt BT" Margin="10,80,10,10" Content="Войти" HorizontalAlignment="Center" Width="75" FontWeight="Bold"/>
-        </StackPanel>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -45,6 +45,5 @@
         <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="6" FontSize="36"> 
             Авторизация
         </TextBlock>
-
     </Grid>
 </Window>
