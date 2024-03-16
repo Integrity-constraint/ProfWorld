@@ -32,6 +32,9 @@
         <Button Click="авторизация" Content="ВХОД"  Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="6" Margin="5" Width="240" FontSize="14">
             
         </Button>
+        <Button Background="Transparent" Click="Регистрация" Content="Регистрация"  Grid.Column="1" Grid.Row="8" VerticalAlignment="Top" Grid.ColumnSpan="6"  Width="240" FontSize="14">
+
+        </Button>
         <TextBox Name="tblog" ToolTip="Логин" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="6" FontSize="18"> 
             
         </TextBox>
