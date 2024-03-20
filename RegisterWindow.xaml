@@ -9,7 +9,7 @@
     <Grid Background="#abc4ff">
         <StackPanel Background="#abc4ff" Orientation="Vertical">
             <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Center" Margin="10,10,10,10" FontWeight="Bold" FontSize="20">Регистрация</TextBlock>
-            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold" Text="Телефон"/>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold" Text="Email"/>
             <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
             <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Логин</TextBlock>
             <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
@@ -19,7 +19,7 @@
             <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,10"></TextBox>
             <!-- Изменение ориентации StackPanel на горизонтальную -->
             <StackPanel Orientation="Horizontal">
-                <Button Margin="10,10,10,0">Зарегистрироваться</Button>
+                <Button Margin="10,10,10,0" Click="Button_Click">Зарегистрироваться</Button>
                 <Button Margin="10,10,10,0">Отмена</Button>
             </StackPanel>
         </StackPanel>
