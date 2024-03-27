@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Packaging;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -21,29 +22,25 @@ namespace ProfWorld
     public partial class EnterWindows : Window
     {
 
-        private RegisterUser _user;
-        public EnterWindows(RegisterUser user)
+        public string LOg;
+        public string PAs;
+        public EnterWindows()
         {
             InitializeComponent();
-            _user = user;
+           
 
 
         }
 
         private void авторизация(object sender, RoutedEventArgs e)
         {
-            string enteredLogin = tblog.Text;
-            string enteredPassword = tbpass.Text;
-
-            if (enteredLogin == _user.Login & enteredPassword == _user.pass)
+            if (tblog.Text == DataBank.login & tbpass.Text == DataBank.password)
             {
-                MessageBox.Show("Авторизация прошла успешно!");
-                // Здесь можно перейти к следующему окну
+                MessageBox.Show("Вход успешен!");
+                Window win = new MainWindow();
+                win.Show();
             }
-            else
-            {
-                MessageBox.Show("Неверный логин или пароль!");
-            }
+           
 
         }
 

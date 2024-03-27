@@ -35,12 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AdonisUI, Version=1.17.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\AdonisUI.1.17.1\lib\net45\AdonisUI.dll</HintPath>
-    </Reference>
-    <Reference Include="AdonisUI.ClassicTheme, Version=1.17.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\AdonisUI.ClassicTheme.1.17.1\lib\net45\AdonisUI.ClassicTheme.dll</HintPath>
-    </Reference>
     <Reference Include="HandyControl, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MHandyControl.3.4.0\lib\net472\HandyControl.dll</HintPath>
     </Reference>
@@ -64,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataBank.cs" />
     <Compile Include="EnterWindows.xaml.cs">
       <DependentUpon>EnterWindows.xaml</DependentUpon>
     </Compile>
@@ -85,7 +80,6 @@
     <Compile Include="Pages\Prof1\Prof1_5.xaml.cs">
       <DependentUpon>Prof1_5.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegisterUser.cs" />
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
