@@ -85,6 +85,7 @@
     <Compile Include="Pages\Prof1\Prof1_5.xaml.cs">
       <DependentUpon>Prof1_5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RegisterUser.cs" />
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>

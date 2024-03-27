@@ -22,6 +22,25 @@ namespace ProfWorld
         public RegisterWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void Registration(object sender, RoutedEventArgs e)
+        {
+            string mail = tbmail.Text;
+            string login = tblogin.Text;
+            RegisterUser reg = new RegisterUser();
+            reg.Register(mail, login);
+           
+            Window enter = new EnterWindows(reg);
+            this.Close();
+            enter.Show();
+            
+        }
+
+        private void Questionmark(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Если вы не видите письма с паролем на вашей почте, обязательно загляните в пункт СПАМ");
         }
     }
 }

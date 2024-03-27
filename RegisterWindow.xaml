@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProfWorld"
         mc:Ignorable="d"
-        Title="RegisterWindow" Height="378" Width="442">
+        Title="RegisterWindow" Height="246" Width="442">
     <Grid Background="#abc4ff">
         <StackPanel Background="#abc4ff" Orientation="Vertical">
             <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Center" Margin="10,10,10,10" FontWeight="Bold" FontSize="20">Регистрация</TextBlock>
-            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold" Text="Телефон"/>
-            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
+            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold" Text="Почта"/>
+            <TextBox Name="tbmail" FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
             <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Логин</TextBlock>
-            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
-            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Пароль</TextBlock>
-            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,15"></TextBox>
-            <TextBlock FontFamily="Futura Lt BT" HorizontalAlignment="Left" Margin="10,0,10,2" FontWeight="Bold">Повторите пароль</TextBlock>
-            <TextBox FontFamily="Futura Lt BT" Margin="10,0,10,10"></TextBox>
+
+
+
+            <TextBox Name="tblogin" FontFamily="Futura Lt BT" Margin="10,0,10,10"></TextBox>
             <!-- Изменение ориентации StackPanel на горизонтальную -->
             <StackPanel Orientation="Horizontal">
-                <Button Margin="10,10,10,0">Зарегистрироваться</Button>
-                <Button Margin="10,10,10,0">Отмена</Button>
+                <Button Click="Registration" Margin="10,10,10,0">Зарегистрироваться</Button>
+                <Button Margin="10,10,10,0" >Отмена</Button>
+                <Button Click="Questionmark" VerticalAlignment="Bottom" Content="?"/>
             </StackPanel>
         </StackPanel>
     </Grid>
