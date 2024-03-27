@@ -26,7 +26,7 @@ namespace ProfWorld
 
         private void авторизация(object sender, RoutedEventArgs e)
         {
-            if(tblog.Text == "Логин" & tbpass.Text == "Пароль")
+            if(tblog.Text == "1" & tbpass.Text == "1")
             {
                 Window main = new MainWindow();
                 this.Close();
