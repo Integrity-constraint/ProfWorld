@@ -50,5 +50,12 @@ namespace ProfWorld
             this.Close();
             reg.Show();
         }
+
+        private void kostyl(object sender, RoutedEventArgs e)
+        {
+            MainWindow WIN = new MainWindow();
+            WIN.Show();
+            this.Close();
+        }
     }
 }
