@@ -78,8 +78,8 @@ namespace ProfWorld
                 msgObj.To.Add(Mail);
                 msgObj.From = new MailAddress(mymail);
                 msgObj.Subject = "Мир профессий 2024!";
-                msgObj.Body = $"Здравствуйте {DataBank.login} вы приглашены на участие! Учтите, что регистрация временная, после закрытия приложения все данные будут стёрты" +
-                    $"Ваш временны пароль: {DataBank.password}";
+                msgObj.Body = $"Здравствуйте {DataBank.login} вы приглашены на участие! Учтите, что регистрация временная, после закрытия приложения все данные будут стёрты." +
+                    $" Ваш временный пароль: {DataBank.password}";
                 smtpClient.Send(msgObj);
 
             }
