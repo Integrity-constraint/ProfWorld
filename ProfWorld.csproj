@@ -232,6 +232,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\ProfWorld.png" />
+    <Resource Include="img\prog.gif" />
+    <Resource Include="img\tenor.gif" />
+    <Resource Include="img\matrix.jpg" />
     <Content Include="LangProvider.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>LangProvider.cs</LastGenOutput>

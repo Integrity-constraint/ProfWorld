@@ -23,6 +23,7 @@ namespace ProfWorld.Pages.Prof3
         public Prof3_1()
         {
             InitializeComponent();
+
         }
 
         private void next(object sender, RoutedEventArgs e)
