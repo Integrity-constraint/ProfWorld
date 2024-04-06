@@ -27,13 +27,15 @@ namespace ProfWorld.Pages.Prof2
 
         private void next(object sender, RoutedEventArgs e)
         {
-            // Получаем родительское окно страницы
-            Window parentWindow = Window.GetWindow(this);
-            if (parentWindow != null && parentWindow is MainWindow mainWindow)
             {
-                // Загружаем следующую страницу в главное окно
-                mainWindow.MainFrame.Navigate(new Prof2_2());
-                mainWindow.st2();
+                // Получаем родительское окно страницы
+                Window parentWindow = Window.GetWindow(this);
+                if (parentWindow != null && parentWindow is MainWindow mainWindow)
+                {
+                    // Загружаем следующую страницу в главное окно
+                    mainWindow.MainFrame.Navigate(new Prof2_2());
+                    mainWindow.st2();
+                }
             }
         }
     }

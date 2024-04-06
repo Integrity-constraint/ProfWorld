@@ -231,6 +231,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Pages\Prof1\img\fon.png" />
+    <Resource Include="Pages\Prof1\img\1.png" />
+    <Resource Include="Pages\Prof1\img\2.png" />
+    <Resource Include="Pages\Prof1\img\3.png" />
+    <Resource Include="Pages\Prof1\img\4.png" />
+    <Resource Include="Pages\Prof1\img\5.png" />
+    <Resource Include="Pages\Prof1\img\6.png" />
+    <Resource Include="Pages\Prof1\img\7.png" />
+    <Resource Include="Pages\Prof1\img\8.png" />
+    <Resource Include="Pages\Prof1\img\9.png" />
     <Resource Include="img\ProfWorld.png" />
     <Resource Include="img\prog.gif" />
     <Resource Include="img\tenor.gif" />
