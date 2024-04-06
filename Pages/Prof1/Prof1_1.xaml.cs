@@ -50,6 +50,7 @@ namespace ProfWorld.Pages
     
     private void next(object sender, RoutedEventArgs e)
         {
+            
             Window parentWindow = Window.GetWindow(this);
             if (parentWindow != null && parentWindow is MainWindow mainWindow)
             {
