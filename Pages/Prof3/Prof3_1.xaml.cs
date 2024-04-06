@@ -28,14 +28,18 @@ namespace ProfWorld.Pages.Prof3
 
         private void next(object sender, RoutedEventArgs e)
         {
-            // Получаем родительское окно страницы
-            Window parentWindow = Window.GetWindow(this);
-            if (parentWindow != null && parentWindow is MainWindow mainWindow)
+            if(rbright.IsChecked == true | rbwrong1.IsChecked ==true | rbwrong2.IsChecked == true)
             {
-                // Загружаем следующую страницу в главное окно
-                mainWindow.MainFrame.Navigate(new Prof3_2());
-                mainWindow.st2();
+                Window parentWindow = Window.GetWindow(this);
+                if (parentWindow != null && parentWindow is MainWindow mainWindow)
+                {
+                    // Загружаем следующую страницу в главное окно
+                    mainWindow.MainFrame.Navigate(new Prof3_2());
+                    mainWindow.st2();
+                }
             }
+            
+           
         }
     }
 }

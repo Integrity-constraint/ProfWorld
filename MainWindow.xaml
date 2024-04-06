@@ -66,6 +66,7 @@
                 <Button x:Name="qst4" Content="4" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
                 <Button x:Name="qst5" Content="5" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
             </StackPanel>
+            
             <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Source="Pages/main.xaml" Grid.Row="1" Background="White"/>
         </Grid>
     </DockPanel>
