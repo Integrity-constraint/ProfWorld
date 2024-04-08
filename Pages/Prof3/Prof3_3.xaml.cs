@@ -40,6 +40,7 @@ namespace ProfWorld.Pages.Prof3
 
         private void next(object sender, RoutedEventArgs e)
         {
+            DataBank.points += 10;
             MessageBox.Show("Таким образом: Паттерн “Декоратор” в программировании - это способ добавления новых функций к объекту " +
                 "без изменения его структуры. " +
                 "Это немного похоже на то, как вы тольуо что улучшили робота, не меняя самого робота.");

@@ -208,7 +208,9 @@ namespace ProfWorld.Pages.Prof3
                         mainWindow.MainFrame.Navigate(new main());
                         mainWindow.end();
                         mainWindow.finish3();
+                        MessageBox.Show($"Поздравляем вас с прохождением квеста профессий! Вы набрали {DataBank.points} ");
                     }
+                    
                 }
                 else if (result == MessageBoxResult.No)
                 {
