@@ -93,12 +93,12 @@
         </hc:GifImage>
         <Border Grid.ColumnSpan="29" CornerRadius="25" Grid.RowSpan="9" Grid.Column="4" Grid.Row="11">
             <StackPanel>
-                <RadioButton Name="rbwrong1" Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="18" > Собирает компьютеры
+                <RadioButton VerticalAlignment="Center" Name="rbwrong1" Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="26" > Собирает компьютеры
                     и понимает в сетях
                 </RadioButton>
-                <RadioButton Name="rbright"  Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="18" > Разрабатывает программное обеспечение
+                <RadioButton VerticalAlignment="Center" Name="rbright"  Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="26" > Разрабатывает программное обеспечение
                 </RadioButton>
-                <RadioButton Name="rbwrong2"  Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="18" >
+                <RadioButton VerticalAlignment="Center" Name="rbwrong2"  Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="26" >
                     Делает выпечку на заказ
                 </RadioButton>
             </StackPanel>
@@ -109,16 +109,17 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Border CornerRadius="25" Grid.RowSpan="3" Grid.Column="34" Grid.ColumnSpan="5" Grid.Row="11">
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button>подсказка</Button>
+        
+            <StackPanel Grid.RowSpan="3" Grid.Column="34" Grid.ColumnSpan="5" Grid.Row="11" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Foreground="White">
+                <Button.Background >
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF188230" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                подсказка</Button>
             </StackPanel>
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF188230" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
+          
     </Grid>
 </Page>

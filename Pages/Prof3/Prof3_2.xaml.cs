@@ -23,10 +23,13 @@ namespace ProfWorld.Pages.Prof3
         public Prof3_2()
         {
             InitializeComponent();
-        }
+            btnnext.IsEnabled = false;
 
+        }
+       
         private void next(object sender, RoutedEventArgs e)
         {
+           
             // Получаем родительское окно страницы
             Window parentWindow = Window.GetWindow(this);
             if (parentWindow != null && parentWindow is MainWindow mainWindow)
@@ -35,6 +38,23 @@ namespace ProfWorld.Pages.Prof3
                 mainWindow.MainFrame.Navigate(new Prof3_3());
                 mainWindow.st3();
             }
+        }
+
+        private void patterns(object sender, RoutedEventArgs e)
+        {
+            zagolovok.Text = "Паттерны!";
+            maintext.Text = "Паттерны проектирования в программировании - это проверенные решения типичных задач, " +
+                "которые возникают при проектировании программного обеспечения. Они представляют собой шаблоны, которые можно применять " +
+                "в различных ситуациях и контекстах. Вот несколько основных типов паттернов проектирования:\r\n\r\n" +
+                "Порождающие паттерны: Эти паттерны отвечают за эффективное создание объектов. Примеры включают в себя Singleton, Factory Method, и Abstract Factory.\r\n" +
+                "Структурные паттерны: Эти паттерны помогают обеспечить правильную организацию различных частей программного обеспечения. Примеры включают в себя Adapter, Decorator, и Composite.\r\n" +
+                "Поведенческие паттерны: Эти паттерны определяют эффективные способы взаимодействия между объектами. Примеры включают в себя Observer, Strategy, и Command.\r\n" +
+                "Использование паттернов проектирования помогает программистам создавать более эффективный, устойчивый и масштабируемый код. " +
+                "Они также облегчают процесс общения между программистами, поскольку паттерны предоставляют общий язык для обсуждения решений проектирования. " +
+                "Поэтому понимание и использование паттернов проектирования является важной частью работы программиста.";
+           
+            btnnext.IsEnabled = true;
+            btnwhat.Visibility = Visibility.Hidden;
         }
     }
 }

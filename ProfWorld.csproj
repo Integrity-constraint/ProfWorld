@@ -80,6 +80,13 @@
     <Compile Include="Pages\Prof1\Prof1_5.xaml.cs">
       <DependentUpon>Prof1_5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Prof3\ArmoredRobot.cs" />
+    <Compile Include="Pages\Prof3\BasicRobot.cs" />
+    <Compile Include="Pages\Prof3\ErgonomicRobot.cs" />
+    <Compile Include="Pages\Prof3\FlyingRobot.cs" />
+    <Compile Include="Pages\Prof3\Robot.cs" />
+    <Compile Include="Pages\Prof3\RobotDecorator.cs" />
+    <Compile Include="Pages\Prof3\SwimmingRobot.cs" />
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
@@ -231,6 +238,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Pages\Prof3\imgprog\robot2.png" />
     <Resource Include="Pages\Prof1\img\fon.png" />
     <Resource Include="Pages\Prof1\img\1.png" />
     <Resource Include="Pages\Prof1\img\2.png" />
