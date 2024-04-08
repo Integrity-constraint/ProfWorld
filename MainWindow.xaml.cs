@@ -21,12 +21,15 @@ namespace ProfWorld
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
  
             InitializeComponent();
             ConfigHelper.Instance.SetLang("ru");
             PreviewKeyDown += MainWindow_PreviewKeyDown;
+            logintab.Content = DataBank.login;
+            score.Content = DataBank.points;
         }
 
         private void MainWindow_PreviewKeyDown(object sender, KeyEventArgs e)

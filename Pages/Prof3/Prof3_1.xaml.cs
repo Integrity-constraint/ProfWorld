@@ -30,6 +30,11 @@ namespace ProfWorld.Pages.Prof3
         {
             if(rbright.IsChecked == true | rbwrong1.IsChecked ==true | rbwrong2.IsChecked == true)
             {
+                if(rbright.IsChecked == true)
+                {
+                    DataBank.points += 10;
+                }
+                
                 Window parentWindow = Window.GetWindow(this);
                 if (parentWindow != null && parentWindow is MainWindow mainWindow)
                 {
@@ -40,6 +45,15 @@ namespace ProfWorld.Pages.Prof3
             }
             
            
+        }
+
+        private void hint(object sender, RoutedEventArgs e)
+        {
+            DataBank.points -= 5;
+            hintb.IsEnabled = false;
+            MessageBox.Show("Работайте методом исключения!");
+
+            
         }
     }
 }

@@ -91,7 +91,7 @@
         <hc:GifImage  Source="/img/tenor.gif" Grid.Column="24" Grid.Row="1" Grid.ColumnSpan="12" Grid.RowSpan="8" OpacityMask="LightGray"  >
 
         </hc:GifImage>
-        <Border Grid.ColumnSpan="29" CornerRadius="25" Grid.RowSpan="9" Grid.Column="4" Grid.Row="11">
+        <Border Grid.ColumnSpan="29" CornerRadius="25" Grid.RowSpan="11" Grid.Column="4" Grid.Row="11">
             <StackPanel>
                 <RadioButton VerticalAlignment="Center" Name="rbwrong1" Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="26" > Собирает компьютеры
                     и понимает в сетях
@@ -101,6 +101,9 @@
                 <RadioButton VerticalAlignment="Center" Name="rbwrong2"  Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="26" >
                     Делает выпечку на заказ
                 </RadioButton>
+                <Button Click="hint" Name="hintb" HorizontalAlignment="Left"  Margin="5" >
+
+                    подсказка</Button>
             </StackPanel>
             <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -111,14 +114,7 @@
         </Border>
         
             <StackPanel Grid.RowSpan="3" Grid.Column="34" Grid.ColumnSpan="5" Grid.Row="11" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button Foreground="White">
-                <Button.Background >
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black" Offset="0"/>
-                        <GradientStop Color="#FF188230" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-                подсказка</Button>
+               
             </StackPanel>
           
     </Grid>

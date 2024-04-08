@@ -113,7 +113,7 @@
                 
             
             <StackPanel>
-                <Image Stretch="Uniform" Margin="6" VerticalAlignment="Center"  HorizontalAlignment="Center" Source="imgprog/robot2.png">
+                <Image Name="image" Stretch="Uniform" Margin="6" VerticalAlignment="Center"  HorizontalAlignment="Center" Source="imgprog/robot2.png">
                     
                 </Image>
 

@@ -20,6 +20,7 @@ namespace ProfWorld.Pages.Prof3
     /// </summary>
     public partial class Prof3_3 : Page
     {
+        
         Robot robot = new BasicRobot();
         public Prof3_3()
         {
@@ -39,6 +40,10 @@ namespace ProfWorld.Pages.Prof3
 
         private void next(object sender, RoutedEventArgs e)
         {
+            DataBank.points += 10;
+            MessageBox.Show("Таким образом: Паттерн “Декоратор” в программировании - это способ добавления новых функций к объекту " +
+                "без изменения его структуры. " +
+                "Это немного похоже на то, как вы тольуо что улучшили робота, не меняя самого робота.");
             // Получаем родительское окно страницы
             Window parentWindow = Window.GetWindow(this);
             if (parentWindow != null && parentWindow is MainWindow mainWindow)
@@ -53,6 +58,7 @@ namespace ProfWorld.Pages.Prof3
         {
             robot = new SwimmingRobot(robot);
             robotext();
+            image.Source= new BitmapImage(new Uri("imgprog/robotswim.png", UriKind.Relative));
             btnfly.IsEnabled =true;
             btnswim.IsEnabled =false;
         }
@@ -61,6 +67,7 @@ namespace ProfWorld.Pages.Prof3
         {
             robot = new FlyingRobot(robot);
             robotext();
+            image.Source = new BitmapImage(new Uri("imgprog/robotsfly.png", UriKind.Relative));
             btnarmor.IsEnabled = true;
             btnfly.IsEnabled = false;
         }
@@ -69,6 +76,7 @@ namespace ProfWorld.Pages.Prof3
         {
             robot = new ArmoredRobot(robot);
             robotext();
+            image.Source = new BitmapImage(new Uri("imgprog/robotsarmor.png", UriKind.Relative));
             btnarmor.IsEnabled = false;
             btnergonom.IsEnabled=true;
         }
@@ -77,6 +85,7 @@ namespace ProfWorld.Pages.Prof3
         {
             robot = new ErgonomicRobot(robot);
             robotext();
+            image.Source = new BitmapImage(new Uri("imgprog/robotsergonomic.png", UriKind.Relative));
             btnergonom.IsEnabled = false;
             btnnext.IsEnabled = true;
         }

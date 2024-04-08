@@ -27,14 +27,33 @@ namespace ProfWorld.Pages.Prof3
 
         private void next(object sender, RoutedEventArgs e)
         {
-            // Получаем родительское окно страницы
-            Window parentWindow = Window.GetWindow(this);
-            if (parentWindow != null && parentWindow is MainWindow mainWindow)
+            if (rbright.IsChecked == true | rbwrong.IsChecked == true | rbwrong2.IsChecked == true)
             {
-                // Загружаем следующую страницу в главное окно
-                mainWindow.MainFrame.Navigate(new Prof3_5());
-                mainWindow.st5();
+                if(rbright.IsChecked == true)
+                {
+                    DataBank.points += 10;
+                }
+                Window parentWindow = Window.GetWindow(this);
+                if (parentWindow != null && parentWindow is MainWindow mainWindow)
+                {
+                    // Загружаем следующую страницу в главное окно
+                    mainWindow.MainFrame.Navigate(new Prof3_5());
+                    mainWindow.st5();
+                }
             }
+            else
+            {
+                MessageBox.Show("Ответьте на вопрос");
+            }
+               
+             
+        }
+
+        private void hint(object sender, RoutedEventArgs e)
+        {
+            DataBank.points -= 5;
+            hintb.IsEnabled = false;
+            MessageBox.Show("Вспомните робота! Он один, а улучшений много и все они относятся к нему");
         }
     }
 }
