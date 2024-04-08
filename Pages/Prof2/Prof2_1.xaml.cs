@@ -128,16 +128,19 @@ namespace ProfWorld.Pages.Prof2
             if (allMatchesCorrect)
             {
                 MessageBox.Show("Все картинки находятся в правильных ячейках.");
+                DataBank.points += 10;
                 next1.IsEnabled = true;
             }
             else
             {
                 MessageBox.Show("Некоторые картинки находятся в неправильных ячейках или ячейки пустые.");
+                next1.IsEnabled = true;
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            DataBank.points -= 5;
             MessageBox.Show("Начните собирать крышу");
             check.IsEnabled = false;
         }

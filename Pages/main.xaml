@@ -9,7 +9,7 @@
       Title="main">
 
     <Grid>
-        <Label Content="Тут описание квеста, как играть, куда тыкать, итоги и т.п" HorizontalAlignment="Left" Margin="232,224,0,0" VerticalAlignment="Top"/>
+        <Label Content="ProfWorld By Ultiduo Team" FontSize="36" Height="92"/>
 
     </Grid>
 </Page>

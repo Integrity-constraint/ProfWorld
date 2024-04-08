@@ -29,6 +29,7 @@ namespace ProfWorld.Pages.Prof2
             // Проверяем, правильно ли выбраны сочетания
             if (ComboBox1.SelectedIndex == 0 && ComboBox2.SelectedIndex == 1 && ComboBox3.SelectedIndex == 2)
             {
+                DataBank.points += 10;
                 MessageBox.Show("Поздравляем! Вы правильно угадали последовательность.");
                 next1.IsEnabled = true;
             }
@@ -52,6 +53,7 @@ namespace ProfWorld.Pages.Prof2
 
         private void pods(object sender, RoutedEventArgs e)
         {
+            DataBank.points -= 10;
             MessageBox.Show("Мне кажется что любой дом начинается с его визуализации...");
             podskazka.IsEnabled = false;
         }

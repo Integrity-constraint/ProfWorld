@@ -8,76 +8,39 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Prof2_4">
 
-    <Grid Background="#26A026">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Opacity="0.5" ImageSource="/Pages/Prof2/img/fon.png" TileMode="Tile" ViewportUnits="RelativeToBoundingBox" Viewport="0,0,1,1"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
-        <Button HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20" Width="770">
+                <TextBlock Foreground="White" Text="Ответьте на следующие вопросы:" FontWeight="Bold" FontSize="25"/>
+                <TextBlock Foreground="White"  Text="1. Что такое “баланс” в дизайне?" Margin="0,10,0,5" FontSize="18"/>
+                <RadioButton Foreground="White"  Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Состояние, когда все элементы равномерно распределены на странице" Name="Answer1" GroupName="Question1"/>
+                <RadioButton  Foreground="White" FontSize="18" HorizontalAlignment="Left" Content=" Состояние, когда цвета и формы согласуются между собой" Name="Answer2" GroupName="Question1"/>
+                <RadioButton Foreground="White"  FontSize="18" HorizontalAlignment="Left" Content="Состояние, когда текст читается легко" Name="Answer3" GroupName="Question1"/>
+                <TextBlock Foreground="White"  Text="2. Что означает “контраст” в дизайне?" Margin="0,10,0,5" FontSize="20"/>
+                <RadioButton Foreground="White"  FontSize="18" HorizontalAlignment="Left" Content="Схожесть между элементами дизайна" Name="Answer4" GroupName="Question2"/>
+                <RadioButton Foreground="White"  Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Отличие между элементами дизайна" Name="Answer5" GroupName="Question2"/>
+                <RadioButton Foreground="White"  FontSize="18" HorizontalAlignment="Left" Content="Симметрия элементов дизайна" Name="Answer6" GroupName="Question2"/>
+                <TextBlock Foreground="White"  Text="3. Какой цвет считается “теплым” в цветовой палитре?" Margin="0,10,0,5" FontSize="20"/>
+                <RadioButton  Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Синий" Name="Answer7" GroupName="Question3"/>
+                <RadioButton Foreground="White"  FontSize="18" HorizontalAlignment="Left" Content="Зеленый" Name="Answer9" GroupName="Question3"/>
+                <RadioButton Foreground="White"  Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Красный" Name="Answer8" GroupName="Question3"/>
+                <TextBlock Foreground="White"  Text="4. Что такое “типографика” в дизайне?" Margin="0,10,0,5" FontSize="20"/>
+                <RadioButton Foreground="White"  FontSize="18" HorizontalAlignment="Left" Content="Искусство создания логотипов" Name="Answer10" GroupName="Question4"/>
+                <RadioButton Foreground="White"  Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Искусство компоновки текста на странице" Name="Answer11" GroupName="Question4"/>
+                <RadioButton Foreground="White"  FontSize="18" HorizontalAlignment="Left" Content="Искусство создания шрифтов" Name="Answer12" GroupName="Question4"/>
+
+                <Button Content="Проверить" Margin="0,20,0,0" Click="CheckAnswers_Click"/>
+                <Button x:Name="ShowHints" Content="Подсказка" Margin="0,10,0,0" Click="ShowHints_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Button x:Name="next1" IsEnabled="False" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Row="1" />
 
     </Grid>
 </Page>

@@ -55,7 +55,8 @@ namespace ProfWorld.Pages
             if (answers.Contains(false))
             {
                 // Если есть хотя бы один неправильный ответ, выводим сообщение об ошибке
-                MessageBox.Show("В тесте есть ошибки. Проверьте свои ответы ещё раз.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("В тесте есть ошибки.", "Проверка завершена", MessageBoxButton.OK, MessageBoxImage.Error);
+                next1.IsEnabled = true;
             }
             else
             {
@@ -87,7 +88,7 @@ namespace ProfWorld.Pages
                 });
 
                 hintShown = true; // Устанавливаем флаг в true, чтобы показать, что подсказка была отображена
-
+                DataBank.points -= 5;
                 // Делаем кнопку "Подсказка" неактивной
                 Dispatcher.Invoke(() => ShowHints.IsEnabled = false);
             }

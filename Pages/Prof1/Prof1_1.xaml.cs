@@ -23,6 +23,7 @@ namespace ProfWorld.Pages
 
             // Привязываем обработчик события изменения размеров окна
             SizeChanged += MainWindow_SizeChanged;
+            
 
             // Инициализируем начальные размеры квадрата
             UpdateSquareSize();
@@ -133,18 +134,21 @@ namespace ProfWorld.Pages
             // Показываем сообщение о правильности или неправильности расположения всех картинок
             if (allMatchesCorrect)
             {
+                DataBank.points += 15;
                 MessageBox.Show("Все картинки находятся в правильных ячейках.");
                 next1.IsEnabled = true;
             }
             else
             {
                 MessageBox.Show("Некоторые картинки находятся в неправильных ячейках или ячейки пустые.");
+                next1.IsEnabled = true;
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Начните собирать крышу");
+            DataBank.points -= 5;
             check.IsEnabled = false;
         }
     }
