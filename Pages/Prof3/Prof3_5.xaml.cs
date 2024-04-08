@@ -205,10 +205,15 @@ namespace ProfWorld.Pages.Prof3
                     Window parentWindow = Window.GetWindow(this);
                     if (parentWindow != null && parentWindow is MainWindow mainWindow)
                     {
+                        mainWindow.score.Content = DataBank.points;
                         mainWindow.MainFrame.Navigate(new main());
                         mainWindow.end();
                         mainWindow.finish3();
-                        MessageBox.Show($"Поздравляем вас с прохождением квеста профессий! Вы набрали {DataBank.points} ");
+                        MessageBox.Show($"Поздравляем вас с прохождением квеста профессий! Вы набрали {DataBank.points} \n Если вы набрали отрицательное значение, значит вы " +
+                            $"довольно сильно накосячили");
+
+
+                       
                     }
                     
                 }
@@ -222,9 +227,11 @@ namespace ProfWorld.Pages.Prof3
                 Window parentWindow = Window.GetWindow(this);
                 if (parentWindow != null && parentWindow is MainWindow mainWindow)
                 {
+                    mainWindow.score.Content = DataBank.points;
                     mainWindow.MainFrame.Navigate(new main());
                     mainWindow.end();
                     mainWindow.finish3();
+                    MessageBox.Show($"Поздравляем вас с прохождением квеста профессий! Вы набрали {DataBank.points} ");
                 }
             }
           

@@ -27,10 +27,15 @@ namespace ProfWorld.Pages.Prof2
 
         private void end(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Вы молодец! Получайте дополнительные очки");
+            DataBank.points += 5;
+           
             Window parentWindow = Window.GetWindow(this);
             if (parentWindow != null && parentWindow is MainWindow mainWindow)
             {
-                mainWindow.MainFrame.Navigate(new main());
+                mainWindow.score.Content = DataBank.points;
+                mainWindow.MainFrame.Navigate(new Prof3.Prof3_1());
+                mainWindow.QuestName.Content = "Сила в цифре";
                 mainWindow.end();
                 mainWindow.finish2();
             }

@@ -92,7 +92,10 @@ namespace ProfWorld.Pages
             Window parentWindow = Window.GetWindow(this);
             if (parentWindow != null && parentWindow is MainWindow mainWindow)
             {
-                mainWindow.MainFrame.Navigate(new main());
+               
+                mainWindow.score.Content = DataBank.points;
+                mainWindow.MainFrame.Navigate(new Pages.Prof2.Prof2_1());
+                mainWindow.QuestName.Content = "Цветник";
                 mainWindow.end();
                 mainWindow.finish1();
             }

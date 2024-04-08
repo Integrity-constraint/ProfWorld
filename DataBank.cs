@@ -12,6 +12,7 @@ namespace ProfWorld
         public static string password;
 
         public static int points ;
+        
 
     }
 }

@@ -43,10 +43,12 @@ namespace ProfWorld.Pages.Prof2
 
             if (answers.Contains(false))
             {
-                MessageBox.Show("В тесте есть ошибки. Проверьте свои ответы ещё раз.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("В тесте есть ошибки.", "Проверка завершена", MessageBoxButton.OK, MessageBoxImage.Error);
+                next1.IsEnabled = true;
             }
             else
             {
+                DataBank.points += 5;
                 MessageBox.Show("Все ответы верны! Поздравляем!", "Проверка завершена", MessageBoxButton.OK, MessageBoxImage.Information);
                 next1.IsEnabled = true;
             }
@@ -64,6 +66,7 @@ namespace ProfWorld.Pages.Prof2
                 });
 
                 hintShown = true;
+                DataBank.points -= 10;
                 ShowHints.IsEnabled = false;
             }
         }

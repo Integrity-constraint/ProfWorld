@@ -73,7 +73,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal">
-                <Label Name="QuestName" Grid.Row="0" Content="Название квеста" Margin="0,5,5,5" HorizontalAlignment="Center" FontFamily="Futura Lt BT" Foreground="#293241" FontSize="26" Height="50" FontWeight="Bold" Width="239"/>
+                <Label Name="QuestName" Grid.Row="0" Content="Кирпич и пыль" Margin="0,5,5,5" HorizontalAlignment="Center" FontFamily="Futura Lt BT" Foreground="#293241" FontSize="26" Height="50" FontWeight="Bold" Width="239"/>
                 <Button x:Name="qst1" Content="1" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
                 <Button x:Name="qst2" Content="2" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>
                 <Button x:Name="qst3" Content="3" Margin="5,5,5,5" Height="50" Width="50" Background="#abc4ff" FontSize="22" IsEnabled="False"/>

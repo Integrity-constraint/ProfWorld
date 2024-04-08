@@ -15,7 +15,7 @@
             <TextBox FontFamily="Futura Lt BT" x:Name="tbpass" Margin="10,0,10,0"></TextBox>
             <Button Click="авторизация" FontFamily="Futura Lt BT" Margin="10,80,10,10" Content="Войти" HorizontalAlignment="Center" Width="136" FontWeight="Bold"/>
             <Button Click="Регистрация" FontFamily="Futura Lt BT" Margin="10,0,10,10" Content="Регистрация" HorizontalAlignment="Center" Width="136" FontWeight="Bold"/>
-            <Button Click="kostyl" Content="Костыли лёхи" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133"/>
+            <Button Visibility="Hidden" Click="kostyl" Content="Костыли лёхи" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133"/>
 
         </StackPanel>
 

@@ -22,9 +22,12 @@ namespace ProfWorld
     /// </summary>
     public partial class RegisterWindow : Window
     {
+        string mymail = "profworldnoreply@gmail.com";
+        string mypas = "zrwi cgcq mddj uapg ";
         public RegisterWindow()
         {
             InitializeComponent();
+
 
         }
 
@@ -61,8 +64,7 @@ namespace ProfWorld
             DataBank.password = GeneratePassword();
             DataBank.login = tblogin.Text;
             Mail = tbmail.Text;
-            string mymail = "profworldnoreply@gmail.com";
-            string mypas = "zrwi cgcq mddj uapg ";
+           
 
             MessageBox.Show("Введите временный пароль на вашей почте");
 
@@ -85,6 +87,7 @@ namespace ProfWorld
             }
         }
 
+       
         private void Questionmark(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Если вы не видите письма с паролем на вашей почте, обязательно загляните в пункт СПАМ");

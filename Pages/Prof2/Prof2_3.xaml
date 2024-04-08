@@ -18,23 +18,23 @@
         </Grid.RowDefinitions>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel Margin="20" HorizontalAlignment="Left">
-                <TextBlock Text="Ответьте на простые вопросы о дизайне:" FontWeight="Bold" FontSize="25"/>
-                <TextBlock Text="1. Какие программы чаще всего используются для рисования картинок и создания иллюстраций?" Margin="0,10,0,5" FontSize="20"/>
-                <RadioButton Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Paint, Adobe Photoshop, Adobe Illustrator" Name="Answer1" GroupName="Question1"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Microsoft Word, Excel, PowerPoint" Name="Answer2" GroupName="Question1"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Visual Studio, Eclipse, Sublime Text" Name="Answer3" GroupName="Question1"/>
-                <TextBlock Text="2. Что такое палитра в рисовании?" Margin="0,10,0,5" FontSize="20"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Магазин с красками" Name="Answer4" GroupName="Question2"/>
-                <RadioButton Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Набор цветов, из которых можно выбирать при рисовании" Name="Answer5" GroupName="Question2"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Текстура кисти" Name="Answer6" GroupName="Question2"/>
-                <TextBlock Text="3. Что такое шрифт в дизайне?" Margin="0,10,0,5" FontSize="20"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Стиль одежды" Name="Answer7" GroupName="Question3"/>
-                <RadioButton Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Стиль и размер букв в тексте" Name="Answer8" GroupName="Question3"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Цветовая схема дизайна" Name="Answer9" GroupName="Question3"/>
-                <TextBlock Text="4. Что такое интерфейс в дизайне?" Margin="0,10,0,5" FontSize="20"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Часть школьного учебника" Name="Answer10" GroupName="Question4"/>
-                <RadioButton Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Способ взаимодействия человека с устройством или программой" Name="Answer11" GroupName="Question4"/>
-                <RadioButton FontSize="18" HorizontalAlignment="Left" Content="Текстовый редактор" Name="Answer12" GroupName="Question4"/>
+                <TextBlock Foreground="White" Text="Ответьте на простые вопросы о дизайне:" FontWeight="Bold" FontSize="25"/>
+                <TextBlock Foreground="White" Text="1. Какие программы чаще всего используются для рисования картинок и создания иллюстраций?" Margin="0,10,0,5" FontSize="20"/>
+                <RadioButton  Foreground="White" Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Paint, Adobe Photoshop, Adobe Illustrator" Name="Answer1" GroupName="Question1"/>
+                <RadioButton Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Microsoft Word, Excel, PowerPoint" Name="Answer2" GroupName="Question1"/>
+                <RadioButton Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Visual Studio, Eclipse, Sublime Text" Name="Answer3" GroupName="Question1"/>
+                <TextBlock Foreground="White" Text="2. Что такое палитра в рисовании?" Margin="0,10,0,5" FontSize="20"/>
+                <RadioButton  Foreground="White"  FontSize="18" HorizontalAlignment="Left" Content="Магазин с красками" Name="Answer4" GroupName="Question2"/>
+                <RadioButton Foreground="White" Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Набор цветов, из которых можно выбирать при рисовании" Name="Answer5" GroupName="Question2"/>
+                <RadioButton Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Текстура кисти" Name="Answer6" GroupName="Question2"/>
+                <TextBlock Foreground="White" Text="3. Что такое шрифт в дизайне?" Margin="0,10,0,5" FontSize="20"/>
+                <RadioButton Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Стиль одежды" Name="Answer7" GroupName="Question3"/>
+                <RadioButton Foreground="White" Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Стиль и размер букв в тексте" Name="Answer8" GroupName="Question3"/>
+                <RadioButton Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Цветовая схема дизайна" Name="Answer9" GroupName="Question3"/>
+                <TextBlock Foreground="White" Text="4. Что такое интерфейс в дизайне?" Margin="0,10,0,5" FontSize="20"/>
+                <RadioButton Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Часть школьного учебника" Name="Answer10" GroupName="Question4"/>
+                <RadioButton Foreground="White" Tag="True" FontSize="18" HorizontalAlignment="Left" Content="Способ взаимодействия человека с устройством или программой" Name="Answer11" GroupName="Question4"/>
+                <RadioButton Foreground="White" FontSize="18" HorizontalAlignment="Left" Content="Текстовый редактор" Name="Answer12" GroupName="Question4"/>
 
                 <Button Content="Проверить" Margin="0,20,0,0" Click="CheckAnswers_Click"/>
                 <Button x:Name="ShowHints" Content="Подсказка" Margin="0,10,0,0" Click="ShowHints_Click"/>

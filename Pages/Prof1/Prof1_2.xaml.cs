@@ -50,6 +50,7 @@ namespace ProfWorld.Pages
         private void pods(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Мне кажется что любой дом начинается с его визуализации...");
+            DataBank.points -= 10;
             podskazka.IsEnabled = false;
         }
     }
