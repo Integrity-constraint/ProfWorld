@@ -238,6 +238,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Pages\Prof2\img\1.png" />
+    <Resource Include="Pages\Prof2\img\2.png" />
+    <Resource Include="Pages\Prof2\img\3.png" />
+    <Resource Include="Pages\Prof2\img\4.png" />
+    <Resource Include="Pages\Prof2\img\5.png" />
+    <Resource Include="Pages\Prof2\img\6.png" />
+    <Resource Include="Pages\Prof2\img\7.png" />
+    <Resource Include="Pages\Prof2\img\8.png" />
+    <Resource Include="Pages\Prof2\img\9.png" />
+    <Resource Include="Pages\Prof2\img\fon.png" />
     <Resource Include="Pages\Prof3\imgprog\robotsarmor.png" />
     <Resource Include="Pages\Prof3\imgprog\robotsergonomic.png" />
     <Resource Include="Pages\Prof3\imgprog\robotsfly.png" />
