@@ -41,5 +41,10 @@ namespace ProfWorld.Pages.Prof3
             
            
         }
+
+        private void hint(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Работайте методом исключения!");
+        }
     }
 }

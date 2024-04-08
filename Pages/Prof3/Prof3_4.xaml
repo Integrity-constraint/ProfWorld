@@ -8,7 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Prof3_4">
 
-    <Grid Background="#FF701E">
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="White" Offset="0.732"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -77,7 +84,57 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
+        <Button HorizontalAlignment="Stretch" Content="Дальше" Click="next" Name="btnnext" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="36" Grid.RowSpan="11" Grid.Column="2" Grid.Row="9">
+            <Border Grid.ColumnSpan="32" CornerRadius="25" Grid.RowSpan="10" Grid.Column="4" Grid.Row="9">
 
+
+
+                <StackPanel >
+
+                    <TextBlock Name="maintext"   Foreground="White" TextWrapping="Wrap" Margin="10" FontSize="24" >
+                        Паттерн декоратор один из многих паттернов проектирования, с которыми придётся столкнуться программисту на его пути. 
+                        Существует множество других паттернов, которые созданы для различных задач и могут быть использованы практически везде, 
+                        если подойти к задаче с умом.
+                    </TextBlock>
+                    <StackPanel Margin="10">
+                        <RadioButton   Name="rbright" Foreground="White" HorizontalAlignment="Left" >
+                            <TextBlock TextWrapping="Wrap" FontSize="25">
+                                 Паттерн Декоратор может подойти тогда, когда есть главный объект и требуется реализовывать 
+дополнительный функционал к нему
+                            </TextBlock>
+                           
+                        </RadioButton>
+                        <RadioButton  Name="rbwrong" Foreground="White"  HorizontalAlignment="Left" FontSize="25">
+                            <TextBlock TextWrapping="Wrap">
+                            Паттерн Декоратор  нужен тогда, когда у вас есть 3 объекта, требуещих главный объект
+                            </TextBlock>
+                        </RadioButton>
+                        <RadioButton Name="rbwrong2" Foreground="White"  HorizontalAlignment="Left" FontSize="25">
+                            <TextBlock TextWrapping="Wrap">
+                            Паттерн Декоратор  нужен тогда, когда у вас есть объекты, которые требуют постоянного надзора и контроля
+                            </TextBlock>
+                        </RadioButton>
+                        <Button Click="hint" HorizontalAlignment="Left" Margin="2">
+                            Подсказка
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF188230" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+        </ScrollViewer>
+        <TextBlock Name="zagolovok"  Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="30" Grid.RowSpan="5" FontSize="65" FontFamily="Trebuchet MS"  >
+     Используем Новое !
+        </TextBlock >
+        <TextBlock Grid.Row="6" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="23" FontSize="24"  >
+           Прочитайте текст и ответьте на вопросы
+            
+        </TextBlock>
     </Grid>
 </Page>

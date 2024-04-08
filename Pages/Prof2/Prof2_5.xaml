@@ -78,6 +78,19 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button HorizontalAlignment="Stretch" Content="Завершить" Click="end" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
+       
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbП"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="7" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbр"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="9" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbо"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="11" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbг"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="13" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbр2"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="15" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbа"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="17" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbм"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="19" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbм2"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="21" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbи"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="23" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbс"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="25" Grid.Row="5" />
+        <TextBox FontSize="25" TextWrapping="Wrap" TextAlignment="Center" Text="" Name="tbт"  Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="27" Grid.Row="5" />
+
 
     </Grid>
 </Page>
