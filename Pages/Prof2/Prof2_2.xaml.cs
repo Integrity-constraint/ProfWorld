@@ -24,19 +24,37 @@ namespace ProfWorld.Pages.Prof2
         {
             InitializeComponent();
         }
-
+        private void check(object sender, RoutedEventArgs e)
+        {
+            // Проверяем, правильно ли выбраны сочетания
+            if (ComboBox1.SelectedIndex == 0 && ComboBox2.SelectedIndex == 1 && ComboBox3.SelectedIndex == 2)
+            {
+                MessageBox.Show("Поздравляем! Вы правильно угадали последовательность.");
+                next1.IsEnabled = true;
+            }
+            else
+            {
+                MessageBox.Show("К сожалению, вы сделали ошибку в последовательности. Попробуйте еще раз.");
+            }
+        }
         private void next(object sender, RoutedEventArgs e)
         {
+            // Получаем родительское окно страницы
+            Window parentWindow = Window.GetWindow(this);
+            if (parentWindow != null && parentWindow is MainWindow mainWindow)
             {
-                // Получаем родительское окно страницы
-                Window parentWindow = Window.GetWindow(this);
-                if (parentWindow != null && parentWindow is MainWindow mainWindow)
-                {
-                    // Загружаем следующую страницу в главное окно
-                    mainWindow.MainFrame.Navigate(new Prof2_3());
-                    mainWindow.st3();
-                }
+                // Загружаем следующую страницу в главное окно
+                mainWindow.MainFrame.Navigate(new Prof2_3());
+                mainWindow.st3();
             }
+        }
+
+
+        private void pods(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Мне кажется что любой дом начинается с его визуализации...");
+            podskazka.IsEnabled = false;
         }
     }
 }
+
