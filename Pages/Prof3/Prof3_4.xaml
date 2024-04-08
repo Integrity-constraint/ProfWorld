@@ -115,7 +115,7 @@
                             Паттерн Декоратор  нужен тогда, когда у вас есть объекты, которые требуют постоянного надзора и контроля
                             </TextBlock>
                         </RadioButton>
-                        <Button Click="hint" HorizontalAlignment="Left" Margin="2">
+                        <Button Click="hint" Name="hintb" HorizontalAlignment="Left" Margin="2">
                             Подсказка
                         </Button>
                     </StackPanel>

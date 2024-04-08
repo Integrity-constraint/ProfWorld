@@ -29,6 +29,10 @@ namespace ProfWorld.Pages.Prof3
         {
             if (rbright.IsChecked == true | rbwrong.IsChecked == true | rbwrong2.IsChecked == true)
             {
+                if(rbright.IsChecked == true)
+                {
+                    DataBank.points += 10;
+                }
                 Window parentWindow = Window.GetWindow(this);
                 if (parentWindow != null && parentWindow is MainWindow mainWindow)
                 {
@@ -47,6 +51,8 @@ namespace ProfWorld.Pages.Prof3
 
         private void hint(object sender, RoutedEventArgs e)
         {
+            DataBank.points -= 5;
+            hintb.IsEnabled = false;
             MessageBox.Show("Вспомните робота! Он один, а улучшений много и все они относятся к нему");
         }
     }

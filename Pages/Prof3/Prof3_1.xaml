@@ -101,7 +101,7 @@
                 <RadioButton VerticalAlignment="Center" Name="rbwrong2"  Foreground="White" HorizontalAlignment="Left" Margin="10" FontSize="26" >
                     Делает выпечку на заказ
                 </RadioButton>
-                <Button Click="hint" HorizontalAlignment="Left"  Margin="4" >
+                <Button Click="hint" Name="hintb" HorizontalAlignment="Left"  Margin="5" >
 
                     подсказка</Button>
             </StackPanel>
