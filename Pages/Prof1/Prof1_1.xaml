@@ -8,7 +8,10 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Prof1_1">
 
-    <Grid Background="#4EADF5">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pages/Prof1/img/fon.png" TileMode="Tile" ViewportUnits="RelativeToBoundingBox" Viewport="0,0,1,1"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>

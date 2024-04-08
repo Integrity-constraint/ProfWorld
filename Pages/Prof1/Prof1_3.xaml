@@ -8,76 +8,59 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Prof1_3">
 
-    <Grid Background="#687FFF">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pages/Prof1/img/fon2.png" TileMode="Tile" ViewportUnits="RelativeToBoundingBox" Viewport="0,0,1,1"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
-        <Button HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20" HorizontalAlignment="Left">
+                <TextBlock Text="Ответьте на вопросы о строительстве:" FontWeight="Bold" FontSize="25"/>
+                <TextBlock Text="1. Что такое фундамент и зачем он нужен при строительстве здания?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Это верхняя часть строения. Нужен для укрепления здания." Name="Answer1A" GroupName="Question1"/>
+                <RadioButton Tag="True" FontSize="20" HorizontalAlignment="Left" Content="Это основание здания. Нужен для передачи нагрузки на грунт." Name="Answer1B" GroupName="Question1"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Это стены здания. Нужен для защиты от влаги." Name="Answer1C" GroupName="Question1"/>
+                <TextBlock Text="2. Какие материалы чаще всего используются для строительства стен?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Стекло, металл, пластик" Name="Answer2A" GroupName="Question2"/>
+                <RadioButton Tag="True" FontSize="20" HorizontalAlignment="Left" Content="Бетон, кирпич, дерево" Name="Answer2B" GroupName="Question2"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Песок, цемент, глина" Name="Answer2C" GroupName="Question2"/>
+                <TextBlock Text="3. Какую роль играет крыша в строительстве дома?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Она является фундаментом здания." Name="Answer3A" GroupName="Question3"/>
+                <RadioButton Tag="True" FontSize="20" HorizontalAlignment="Left" Content="Она защищает здание от осадков и солнечного излучения." Name="Answer3B" GroupName="Question3"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Она используется для утепления стен." Name="Answer3C" GroupName="Question3"/>
+                <TextBlock Text="4. Какие этапы включает в себя строительство дома?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton Tag="True" FontSize="20" HorizontalAlignment="Left" Content="Планировка, строительство, ремонт" Name="Answer4A" GroupName="Question4"/>
+                <RadioButton  FontSize="20" HorizontalAlignment="Left" Content="Эскиз, проектирование, строительство" Name="Answer4B" GroupName="Question4"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Отделка, монтаж, реконструкция" Name="Answer4C" GroupName="Question4"/>
+
+                <TextBlock Text="5. Почему важно изоляция в строительстве и какие материалы используются для утепления стен?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Изоляция сохраняет свежий воздух. Используются стекло, металл, пластик" Name="Answer5A" GroupName="Question5"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Изоляция обеспечивает сохранение тепла. Используются песок, цемент, глина" Name="Answer5B" GroupName="Question5"/>
+                <RadioButton Tag="True" FontSize="20" HorizontalAlignment="Left" Content="Изоляция предотвращает потерю тепла. Используются минеральная вата, пенопласт, пенополистирол" Name="Answer5C" GroupName="Question5"/>
+
+                <TextBlock Text="6. Какие факторы нужно учитывать при выборе места для строительства дома?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Погода, дорожная инфраструктура, соседи" Name="Answer6A" GroupName="Question6"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Подземные воды, природные катаклизмы, рельеф местности" Name="Answer6B" GroupName="Question6"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Расстояние до магазинов, близость к друзьям, доступность транспорта" Name="Answer6C" GroupName="Question6"/>
+
+                <TextBlock Text="7. Что такое планировка помещений в здании и зачем она нужна?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Планировка помещений - это ремонт стен. Она нужна для красивого внешнего вида дома" Name="Answer7A" GroupName="Question7"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Планировка помещений - это размещение мебели в доме. Она нужна для комфортного проживания" Name="Answer7B" GroupName="Question7"/>
+                <RadioButton Tag="True" FontSize="20" HorizontalAlignment="Left" Content="Планировка помещений - это распределение функциональных зон в здании. Она нужна для оптимального использования пространства" Name="Answer7C" GroupName="Question7"/>
+
+                <TextBlock Text="8. Какие меры безопасности нужно соблюдать на строительной площадке?" Margin="0,10,0,5" FontSize="22"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Носить шлемы и защитные очки, соблюдать правила обращения с огнем" Name="Answer8A" GroupName="Question8"/>
+                <RadioButton FontSize="20" HorizontalAlignment="Left" Content="Соблюдать тишину, не отвлекать работников, придерживаться графика строительства" Name="Answer8B" GroupName="Question8"/>
+                <RadioButton Tag="True" FontSize="20" HorizontalAlignment="Left" Content="Соблюдать правила охраны труда, контролировать состояние строительных материалов, оградить опасные участки" Name="Answer8C" GroupName="Question8"/>
+
+                <Button Content="Проверить" Margin="0,20,0,0" Click="CheckAnswers_Click"/>
+                <Button x:Name="ShowHints" Content="Подсказка" Margin="0,10,0,0" Click="ShowHints_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+        <Button x:Name="next1" IsEnabled="False" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Row="1" />
 
     </Grid>
 </Page>

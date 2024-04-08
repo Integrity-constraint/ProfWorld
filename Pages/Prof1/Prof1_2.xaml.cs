@@ -21,7 +21,19 @@ namespace ProfWorld.Pages
         {
             InitializeComponent();
         }
-
+        private void check(object sender, RoutedEventArgs e)
+        {
+            // Проверяем, правильно ли выбраны сочетания
+            if (ComboBox1.SelectedIndex == 0 && ComboBox2.SelectedIndex == 1 && ComboBox3.SelectedIndex == 2)
+            {
+                MessageBox.Show("Поздравляем! Вы правильно угадали последовательность.");
+                next1.IsEnabled = true;
+            }
+            else
+            {
+                MessageBox.Show("К сожалению, вы сделали ошибку в последовательности. Попробуйте еще раз.");
+            }
+        }
         private void next(object sender, RoutedEventArgs e)
         {
             // Получаем родительское окно страницы
@@ -32,6 +44,13 @@ namespace ProfWorld.Pages
                 mainWindow.MainFrame.Navigate(new Prof1_3());
                 mainWindow.st3();
             }
+        }
+
+
+        private void pods(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Мне кажется что любой дом начинается с его визуализации...");
+            podskazka.IsEnabled = false;
         }
     }
 }

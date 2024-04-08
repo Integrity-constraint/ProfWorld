@@ -8,76 +8,43 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Prof1_2">
 
-    <Grid Background="#8496FF">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pages/Prof1/img/fon3.png" TileMode="Tile" ViewportUnits="RelativeToBoundingBox" Viewport="0,0,1,1"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="162*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="41*"/>
         </Grid.RowDefinitions>
-        <Button HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="Поставьте следующие этапы строительства здания в нужном порядке:" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" BorderThickness="0"/>
+        <ComboBox x:Name="ComboBox1" Grid.Row="2" Grid.Column="1" Margin="10">
+            <ComboBoxItem>Строительный чертеж</ComboBoxItem>
+            <ComboBoxItem>Закупка материалов</ComboBoxItem>
+            <ComboBoxItem>Строительство здания</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="ComboBox2" Grid.Row="2" Grid.Column="2" Margin="10">
+            <ComboBoxItem>Строительный чертеж</ComboBoxItem>
+            <ComboBoxItem>Закупка материалов</ComboBoxItem>
+            <ComboBoxItem>Строительство здания</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="ComboBox3" Grid.Row="2" Grid.Column="3" Margin="10">
+            <ComboBoxItem>Строительный чертеж</ComboBoxItem>
+            <ComboBoxItem>Закупка материалов</ComboBoxItem>
+            <ComboBoxItem>Строительство здания</ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Column="2" Grid.Row="3" Margin="10" Click="check">Проверить соответствия</Button>
+        <Button Grid.Column="3" Grid.Row="3" Margin="10" Name="podskazka" Click="pods">Подсказка</Button>
+        <Button x:Name="next1" IsEnabled="False" HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Column="0" Grid.ColumnSpan="5" VerticalAlignment="Bottom" Grid.Row="4"/>
 
     </Grid>
 </Page>
