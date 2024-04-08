@@ -84,15 +84,15 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button HorizontalAlignment="Stretch" Content="Дальше" Click="next" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
-        <ScrollViewer VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="32" Grid.RowSpan="10" Grid.Column="4" Grid.Row="9">
+        <Button HorizontalAlignment="Stretch" Content="Дальше" Click="next" Name="btnnext" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="40" Grid.RowSpan="2"/>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="36" Grid.RowSpan="11" Grid.Column="2" Grid.Row="9">
         <Border Grid.ColumnSpan="32" CornerRadius="25" Grid.RowSpan="10" Grid.Column="4" Grid.Row="9">
             
                 
             
             <StackPanel >
                 
-                <TextBlock    Foreground="White" TextWrapping="Wrap" Margin="10" FontSize="24" >
+                <TextBlock Name="maintext"   Foreground="White" TextWrapping="Wrap" Margin="10" FontSize="24" >
                     Проектирование в профессии программиста - это процесс создания структуры программного обеспечения. 
                     Это включает в себя планирование функций и операций, которые будут выполняться программой, а также определение того, как эти 
                     функции будут взаимодействовать друг с другом.
@@ -103,7 +103,9 @@
 Проектирование алгоритмов: Программисты создают алгоритмы для решения конкретных задач. Это может включать в себя все, от сортировки списка до выполнения сложных математических расчетов.
 Важно помнить, что хорошее программное обеспечение начинается с хорошего проектирования. Проектирование помогает программистам предвидеть проблемы, которые могут возникнуть в процессе написания кода, и позволяет им создавать программы, которые легко поддерживать и модифицировать. Поэтому проектирование является важной частью работы программиста.
                 </TextBlock>
-                
+                    <Button Name="btnwhat" Click="patterns" HorizontalAlignment="Stretch">
+                        И что же относиться к проектированию?
+                    </Button>
             </StackPanel>
             <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -113,7 +115,7 @@
             </Border.Background>
         </Border>
         </ScrollViewer>
-        <TextBlock TextWrapping="Wrap" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="29" Grid.RowSpan="5" FontSize="67" FontFamily="Trebuchet MS" Margin="0,0,10,0" >
+        <TextBlock Name="zagolovok" TextWrapping="Wrap" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="29" Grid.RowSpan="5" FontSize="67" FontFamily="Trebuchet MS" Margin="0,0,10,0" >
      Проектирование ?
         </TextBlock >
         <TextBlock Grid.Row="7" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="15" FontSize="24" >

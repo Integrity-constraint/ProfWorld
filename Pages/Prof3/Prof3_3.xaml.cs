@@ -20,9 +20,21 @@ namespace ProfWorld.Pages.Prof3
     /// </summary>
     public partial class Prof3_3 : Page
     {
+        Robot robot = new BasicRobot();
         public Prof3_3()
         {
             InitializeComponent();
+
+            btnarmor.IsEnabled = false;
+             btnergonom.IsEnabled = false;
+             btnfly.IsEnabled = false;
+             btnnext.IsEnabled = false;
+             
+        }
+
+        private void robotext()
+        {
+            tbstats.Text = robot.GetDescription();
         }
 
         private void next(object sender, RoutedEventArgs e)
@@ -35,6 +47,38 @@ namespace ProfWorld.Pages.Prof3
                 mainWindow.MainFrame.Navigate(new Prof3_4());
                 mainWindow.st4();
             }
+        }
+
+        private void addswim(object sender, RoutedEventArgs e)
+        {
+            robot = new SwimmingRobot(robot);
+            robotext();
+            btnfly.IsEnabled =true;
+            btnswim.IsEnabled =false;
+        }
+
+        private void addfly(object sender, RoutedEventArgs e)
+        {
+            robot = new FlyingRobot(robot);
+            robotext();
+            btnarmor.IsEnabled = true;
+            btnfly.IsEnabled = false;
+        }
+
+        private void addarmor(object sender, RoutedEventArgs e)
+        {
+            robot = new ArmoredRobot(robot);
+            robotext();
+            btnarmor.IsEnabled = false;
+            btnergonom.IsEnabled=true;
+        }
+
+        private void roboergonomic(object sender, RoutedEventArgs e)
+        {
+            robot = new ErgonomicRobot(robot);
+            robotext();
+            btnergonom.IsEnabled = false;
+            btnnext.IsEnabled = true;
         }
     }
 }
