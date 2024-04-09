@@ -83,7 +83,7 @@ namespace ProfWorld.Pages.Prof3
             }
             else
             {
-                // Проверяем, угадано ли слово "кирпич"
+                
                 if (!isПрограммист && tbП.Text.ToLower() == "п" && tbр.Text.ToLower() == "р" && tbо.Text.ToLower() == "о" &&
                     tbг.Text.ToLower() == "г" && tbр2.Text.ToLower() == "р" && tbа.Text.ToLower() == "а" && tbм.Text.ToLower() == "м" && tbм2.Text.ToLower() == "м"
                     && tbи.Text.ToLower() == "и" && tbс.Text.ToLower() == "с" && tbт.Text.ToLower() == "т"
@@ -107,7 +107,7 @@ namespace ProfWorld.Pages.Prof3
                     MessageBox.Show("Вы угадали слово 'Программист'!");
                 }
 
-                // Проверяем, угадано ли слово "лопата"
+                
                if (!isПаттерн && tbП.Text.ToLower() == "п" && tbа2.Text.ToLower() == "а" && tbт2.Text.ToLower() == "т" &&
                     tbт3.Text.ToLower() == "т" && tbе.Text.ToLower() == "е" && tbр3.Text.ToLower() == "р" && tbн.Text.ToLower() == "н")
                {
