@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Opacity="0.5" ImageSource="/Pages/Prof2/img/fon.png" TileMode="Tile" ViewportUnits="RelativeToBoundingBox" Viewport="0,0,1,1"/>
+            <ImageBrush  ImageSource="/Pages/Prof2/img/fon.png" TileMode="Tile" ViewportUnits="RelativeToBoundingBox" Viewport="0,0,1,1"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="137*"/>
