@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProfWorld"
         mc:Ignorable="d"
-        Title="Меню" Height="650" Width="1200" WindowStartupLocation="CenterScreen">
+        Title="Мир профессий" Height="650" Width="1200" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
   
